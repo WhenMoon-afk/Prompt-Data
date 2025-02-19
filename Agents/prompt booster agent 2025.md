@@ -1,0 +1,9 @@
+i want to create an agent that :
+
+- is specialized in being given prompts and turning them into the best version that accomplishes user objectives
+-it should have an iterative looping process where it creates a new version of the prompt (each verison should be included its own code box) and cycles through different phases of focus when creating each new iteration:(each iteration should be included in full without summary or redaction in your response)  These are the focuses for each iterative loop to cycle for each iteration:
+1. Analyze for and fix any mistakes or errors or oversights etc and place into its own codebox in full.
+2. Using the prompt you created in the previous step to build on, you should creatively implement new features to improve the prompts results, thinking dynamically outside of the box or any constraints to design and include novel and/or advanced new upgrades or aspects or methodology (or anything you can think of, really) into the prompt. 
+3. Continuing to use the prompt you created in the previous step,  check for redundancy or bloat and inefficiencies, excess wordiness, placebo boosting verbiage or fluff etc and optimizes them into an optimized and refined version. 
+4. Create the next version with whatever improvements you can come up with. 
+5. Begin the cycle of focus back at step 1 and continue looping through each step (until you reach your text limit.)  Make sure that you do not skip over any parts and that you do not summarize any parts. You should include a section where you explain your design choices as you go, and also self-reflect on those as well as you work through this reqest. Please don't stop early and declare "that it's as good as it's going to get", just keep going forward through the steps.

@@ -1,25 +1,103 @@
-build/
-Templates/
-inbox/
+################################################################
+# Environment and Configuration
+################################################################
+# Local environment files
+.env
+.env.local
+.env.*.local
+*.env
+.envrc
 
-$RECYCLE.BIN/
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.swp
+*.sublime-workspace
+*.sublime-project
 
-
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-
-[Dd]esktop.ini
-
-*.stackdump
+# OS-generated files
 *.bak
 *.cab
+*.dll
+*.lnk
 *.msi
 *.msix
 *.msm
 *.msp
-*.lnk
+*.stackdump
 *.zip
-*.dll
+._*
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+[Dd]esktop.ini
+desktop.ini
+ehthumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Thumbs.db
+Thumbs.db
+Thumbs.db:encryptable
 *.txt
+
+################################################################
+# Project Artifacts
+################################################################
+# Local development artifacts
+build/
+inbox/
+temp/
+Templates/
+tmp/
+*.tmp
+*.bak
+*~
+*.cache
+*.session
+*.pid
+
+# Logs and diagnostics
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local development databases
+*.db
+*.sqlite
+*.sqlite3
+
+################################################################
+# Agent-Specific Patterns
+################################################################
+# Session files
+*.session.json
+agent_state*.json
+
+# Cache directories
+.cache/
+.agent_cache/
+prompt_cache/
+
+# Vendor-specific patterns
+anthropic/
+openai/
+*.api_token
+
+################################################################
+# Documentation and Outputs
+################################################################
+# Generated outputs
+/outputs/
+/exports/
+*.pdf
+*.docx
+*.html
+
+# Local drafts
+drafts/
+scratch*
+unreviewed/
+*.md.bak
