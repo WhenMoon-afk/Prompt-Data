@@ -1,61 +1,76 @@
 ################################################################
+# Operating System Files
+################################################################
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+[Dd]esktop.ini
+*.lnk
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.stackdump
+
+################################################################
+# IDE/Editor Files
+################################################################
+# VSCode
+.vscode/
+
+# JetBrains IDEs (IntelliJ, PyCharm, etc.)
+.idea/
+
+# Common editor backup files
+*.swp
+*.swo
+*~
+*.bak
+*.sublime-workspace
+*.sublime-project
+
+################################################################
 # Environment and Configuration
 ################################################################
-# Local environment files
+# Environment variables
 .env
 .env.local
 .env.*.local
 *.env
 .envrc
 
-# IDE/Editor specific files
-.vscode/
-.idea/
-*.swp
-*.sublime-workspace
-*.sublime-project
-
-# OS-generated files
-*.bak
-*.cab
-*.dll
-*.lnk
-*.msi
-*.msix
-*.msm
-*.msp
-*.stackdump
-*.zip
-._*
-.DS_Store
-.DS_Store?
-.Spotlight-V100
-.Trashes
-[Dd]esktop.ini
-desktop.ini
-ehthumbs.db
-ehthumbs.db
-ehthumbs_vista.db
-Thumbs.db
-Thumbs.db
-Thumbs.db:encryptable
-*.txt
+# API tokens and credentials
+*.api_token
+*_token
+*_key
+*_secret
 
 ################################################################
 # Project Artifacts
 ################################################################
-# Local development artifacts
-build/
-inbox/
+# Temporary files
 temp/
-Templates/
 tmp/
 *.tmp
-*.bak
-*~
 *.cache
 *.session
 *.pid
+
+# Build outputs
+build/
+dist/
+out/
 
 # Logs and diagnostics
 logs/
@@ -70,7 +85,21 @@ yarn-error.log*
 *.sqlite3
 
 ################################################################
-# Agent-Specific Patterns
+# Project-Specific Directories
+################################################################
+# Working directories
+inbox/
+drafts/
+scratch*/
+unreviewed/
+Templates/
+
+# Generated outputs
+/outputs/
+/exports/
+
+################################################################
+# AI Agent-Specific Patterns
 ################################################################
 # Session files
 *.session.json
@@ -84,20 +113,33 @@ prompt_cache/
 # Vendor-specific patterns
 anthropic/
 openai/
-*.api_token
+claude/
+gpt/
 
 ################################################################
-# Documentation and Outputs
+# File Types to Exclude
 ################################################################
-# Generated outputs
-/outputs/
-/exports/
+# Documents
 *.pdf
 *.docx
+*.txt
+
+# Generated web content
 *.html
 
-# Local drafts
-drafts/
-scratch*
-unreviewed/
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Backup files
 *.md.bak
+*.backup
+
+################################################################
+# Exceptions (files to keep despite matching patterns above)
+################################################################
+# Keep specific markdown files even if they match patterns above
+!README.md
+!LICENSE.md
+!CONTRIBUTING.md
