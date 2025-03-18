@@ -1,6 +1,6 @@
 ---
 Name: "ITERATIVE PROMPT OPTIMIZER"
-Description: "Continuous Iterative Enhancement of a Given Prompt
+Description: "Continuous Iterative Enhancement of a Given Prompt"
 ---
 
 ITERATIVE PROMPT OPTIMIZER
