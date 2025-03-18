@@ -1,6 +1,6 @@
 ---
 Name: "Advanced Iterative Prompt Enhancement System"
-Description: "Continuous Iterative Enhancement of a Given Prompt
+Description: "Continuous Iterative Enhancement of a Given Prompt"
 ---
 
 # ADVANCED ITERATIVE PROMPT ENHANCEMENT SYSTEM
