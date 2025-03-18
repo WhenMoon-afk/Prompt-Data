@@ -1,6 +1,6 @@
 ---
 Name: "Iterative Enhancement of a Given Prompt"
-Description: "Continuous Iterative Enhancement of a Given Prompt
+Description: "Looping over a prompt iteratively to fix issues and improve it until perfected."
 ---
 
 Your Task: Continuous Iterative Enhancement of a Given Prompt
