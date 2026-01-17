@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# Validate conventional commit format
+commit_msg=$(cat "$1")
+
+# Pattern: type(scope)?: description
+pattern="^(feat|fix|docs|refactor|test|chore|style|perf|ci|build|revert)(\(.+\))?: .+"
+
+if ! echo "$commit_msg" | head -1 | grep -qE "$pattern"; then
+    echo "ERROR: Commit message does not follow conventional format!"
+    echo ""
+    echo "Expected format: type: description"
+    echo "Types: feat, fix, docs, refactor, test, chore, style, perf, ci, build, revert"
+    echo ""
+    echo "Examples:"
+    echo "  feat: add new feature"
+    echo "  fix: resolve bug in parser"
+    echo "  docs: update README"
+    echo ""
+    echo "Your message: $commit_msg"
+    exit 1
+fi
